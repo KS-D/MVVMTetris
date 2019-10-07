@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace MVVMTetris.Models.ShapeModel
 {
+    /// <summary>
+    /// Class <c>ShapeModel</c>
+    /// Abstract class that represents a shape consisting of 4 blocks.
+    /// </summary>
     abstract class ShapeModel
     {
         private BlockModel[] _shapeBlocks;
@@ -23,7 +27,11 @@ namespace MVVMTetris.Models.ShapeModel
             BuildShape();
 
         }
-
+        
+        /// <summary>
+        /// Method <c>BuildShape</c>
+        /// Abstract method that builds the instance of an actual shape.
+        /// </summary>
         public abstract void BuildShape();
 
         public void CenterShape()

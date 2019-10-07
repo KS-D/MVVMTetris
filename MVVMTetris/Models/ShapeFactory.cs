@@ -3,6 +3,11 @@ using MVVMTetris.Models.ShapeModel;
 
 namespace MVVMTetris.Models
 {
+    /// <summary>
+    /// Class <c>ShapeFactory</c>
+    /// This class is reposible for creating the various types of block shapes used
+    /// in the game of tetris.
+    /// </summary>
     class ShapeFactory
     {
         private Random _rand = new Random();
